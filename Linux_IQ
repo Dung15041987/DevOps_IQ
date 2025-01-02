@@ -1,0 +1,7 @@
+1) What is Linux and cmd for user management?
+	Linux is an open-source operating system, and cmd is a command-line interface for user management.
+	Linux is an open-source operating system known for its stability, security, and flexibility.
+	Cmd (Command Prompt) is a command-line interface in Windows for executing commands.
+	In Linux, user management involves creating, modifying, and deleting user accounts.
+	Commands like 'useradd', 'usermod', and 'userdel' are used for user management in Linux.
+	Cmd commands like 'net user', 'net localgroup', and 'net accounts' are used for user management in Windows
