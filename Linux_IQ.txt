@@ -17,6 +17,13 @@ init sets the remainder of the system processes in motion.
 For some purpose, init starts a method permitting you to log in, typically at the top or close to the top of the boot sequence.
 
                                               (OR)
-3) Explain how Linux mechanisms work, especially when the system starts?                                                                                                                                             1. BIOS/UEFI: Initial hardware checks, hand over control to the bootloader.
+3) Explain how Linux mechanisms work, especially when the system starts?
+  1. BIOS/UEFI: Initial hardware checks, hand over control to the bootloader.
+  2. Bootloader (GRUB): Loads the Linux kernel and initramfs/initrd.
+  3. Linux Kernel: Initializes hardware, loads drivers, mounts root filesystem.
+  4. init/systemd: Manages services, starts critical processes, reaches target 
+    runlevel.    
+  5. User Login: Starts user session, graphical or command-line interface.
+
           
 
