@@ -1,0 +1,22 @@
+1) What is Linux and cmd for user management?
+	Linux is an open-source operating system, and cmd is a command-line interface for user management.
+	Linux is an open-source operating system known for its stability, security, and flexibility.
+	Cmd (Command Prompt) is a command-line interface in Windows for executing commands.
+	In Linux, user management involves creating, modifying, and deleting user accounts.
+	Commands like 'useradd', 'usermod', and 'userdel' are used for user management in Linux.
+	Cmd commands like 'net user', 'net localgroup', and 'net accounts' are used for user management in Windows
+
+2) How does a Linux boot?
+	Stages: 
+The machine’s BIOS or boot microcode hundreds and runs a boot loader.
+Boot loader finds the kernel image on the disk and loads it into memory, to start the system.
+The kernel initializes the devices and their drivers.
+The kernel mounts the basis filesystem.
+The kernel starts a program referred to as init with a method ID zero
+init sets the remainder of the system processes in motion.
+For some purpose, init starts a method permitting you to log in, typically at the top or close to the top of the boot sequence.
+
+                                              (OR)
+3) Explain how Linux mechanisms work, especially when the system starts?                                                                                                                                             1. BIOS/UEFI: Initial hardware checks, hand over control to the bootloader.
+          
+
