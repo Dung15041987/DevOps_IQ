@@ -33,5 +33,188 @@ For some purpose, init starts a method permitting you to log in, typically at th
 	The init process is started, which executes startup scripts and launches system services
 
 
+5) What is Linux, crontab?
+        Linux is an open-source operating system based on Unix. Crontab is a tool used to schedule tasks in Linux.
+	Linux is highly customizable and widely used in servers and supercomputers.
+	Crontab allows users to schedule tasks to run automatically at specified times.
+	Examples of tasks that can be scheduled with crontab include backups, updates, and system maintenance.
+	Crontab uses a specific syntax to specify the time and frequency of tasks.
+	Crontab can be edited using the command line or a text editor.
+            6) How do you give executable permissions of a file only to the user?
+	To give executable permissions of a file only to the user, use the chmod command with the u+x option.
+	Open the terminal and navigate to the directory where the file is located.
+	Use the command 'chmod u+x filename' to give executable permissions to the user only.
+	Verify the permissions using the 'ls -l' command.
+
+7) How to create soft link and hardlink How to create empty file in Linux?
+	To create a soft link, use the 'ln -s' command. To create a hard link, use the 'ln' command. To create an empty file, use the 'touch' command.
+	To create a soft link: ln -s
+	To create a hard link: ln
+	To create an empty file: touch
+
+                                              (OR)
+
+8) Define hard and soft link? What is C-user group?
+Hard links and soft links are two types of links used in Unix-like operating systems to create references to files.
+	Hard link is a direct reference to the inode of a file, while soft link is a pointer to the file by name.
+	Hard links cannot reference directories or files on different filesystems, while soft links can.
+	Changing the original file will affect all hard links, but only the soft link will be broken if the original file is moved or deleted.
+
+9) What is the use of chmod and chown command? Give me one example?
+	chmod and chown commands are used to change file permissions and ownership respectively.
+	chmod command is used to change the permissions of a file or directory
+	chown command is used to change the ownership of a file or directory
+	Example: chmod 755 file.txt - This command gives read, write and execute permissions to the owner and read and execute permissions to group and others.
+	Example: chown user1 file.txt - This command changes the ownership of file.txt to user1
+
+10) What will be the IP range if i need 500 IPs?
+	The IP range for 500 IPs would typically be a /23 subnet.
+	For 500 IPs, you would need at least a /23 subnet.
+	A /23 subnet provides 512 IP addresses (2^9 = 512), with 510 usable IPs after subtracting network and broadcast addresses.
+	The IP range for a /23 subnet would be from x.x.x.0 to x.x.x.255.
+11) How to create the sub directories using mkdir command?
+	To create sub directories using mkdir command, use the -p option followed by the directory path.
+	Use the command 'mkdir -p directory/subdirectory'
+	The -p option creates parent directories if they don't exist
+	Multiple subdirectories can be created at once using 'mkdir -p directory/subdirectory1/subdirectory2'
+	Use 'mkdir -m' option to set permissions for the directory
+
+12) How to run the script in bash?
+	To run a script in bash, use the command 'bash scriptname.sh' or './scriptname.sh' if the script is executable.
+	Open the terminal or command prompt
+	Navigate to the directory where the script is located
+	Use the 'bash' command followed by the script name with the '.sh' extension
+	Alternatively, if the script is executable, use './scriptname.sh'
+	Ensure the script has the necessary permissions to be executed
+
+ 13) Linux command to find disc utilization?
+	Command to find disk utilization in Linux?
+	Use 'df' command to display disk space utilization
+	Use '-h' option to display sizes in human-readable format
+	Use '-T' option to display file system type
+	Use '-x' option to exclude certain file system types
+	Example: 'df -hT -x tmpfs -x devtmpfs'
+14) What is bash?
+	Bash is a command language interpreter for Unix-like operating systems.
+	Bash stands for Bourne Again SHell.
+	It is the default shell for most Unix-like systems.
+	Bash allows users to execute commands, write scripts, and automate tasks.
+	It supports features like command substitution, variables, loops, conditionals, and functions.
+	Bash scripts have a .sh file extension.
+
+15) What is webhook &amp; why?
+	Webhook is a method of augmenting or altering the behavior of a web page, or web application, with custom callbacks.
+	Webhook is a way for an application to provide other applications with real-time information.
+	It allows developers to receive instant notifications when a specific event occurs.
+	Webhooks are commonly used in automation, continuous integration, and deployment processes.
+	Examples include receiving notifications when a code repository is updated or when a payment is made on an e-commerce website.
+16) Execute a command to show whether httpd service is running or not?
+
+	Command to check httpd service status
+	Use the command 'systemctl status httpd' to check the status of httpd service
+	If httpd service is running, the output will show 'active (running)'
+	If httpd service is not running, the output will show 'inactive (dead)'
+
+17) What is load average in Linux?
+	Average load in Linux refers to the amount of work being done by the system at a given time.
+	Average load is measured as a decimal number, with 1.00 representing a fully loaded system.
+	It takes into account both running processes and processes waiting for resources.
+	High average load can indicate a need for more resources or optimization of processes.
+	Command 'uptime' can be used to check the average load on a Linux system.
+
+18) Tell me filter command in Linux?
+	Filter command in Linux is used to filter out specific data from a file or output.
+	The basic syntax of the filter command is 'command | filter'.
+	Commonly used filter commands are grep, sed, awk, cut, sort, uniq, etc.
+	grep is used to search for a specific pattern in a file or output.
+	sed is used to perform text transformations on a file or output.
+	awk is used to process and manipulate text data.
+	cut is used to extract specific columns from a file or output.
+	sort is used to sort the lines of a file or output.
+	uniq is used to remove duplicate lines from a file or output.
+
+ 19) Can you tell me how to check the memory and storage in Linux?
+	To check memory and storage in Linux, you can use commands like free, df, and du.
+	Use 'free' command to check memory usage and available memory
+	Use 'df' command to check disk space usage
+	Use 'du' command to check disk usage of specific directories
+
+20) How to check the pattern in all files in current directory?
+	Use grep command to check pattern in all files in current directory
+	Use 'grep' command with the desired pattern and '*' wildcard to search for the pattern in all files in the current directory
+	For example, to search for the pattern 'example' in all files in the current directory: grep 'example' *
+
+ 21) Linux basic commands for troubleshooting?
+	Some basic Linux commands for troubleshooting include ls, ps, top, grep, and netstat.
+	ls - list directory contents
+	ps - report a snapshot of the current processes
+	top - display Linux processes
+	grep - search for specific patterns in files
+	netstat - display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+
+22) How to check the open files in the Linux without using lsof
+	To check open files in Linux without using lsof, you can use the /proc filesystem.
+	Access the /proc//fd directory to view open files for a specific process.
+	Use the find command to search for open files in the /proc directory.
+	Check the /proc/sys/fs/file-nr file to see the total number of open files system-wide.
+
+23) Linux command for background running process/service
+	The Linux command for background running process/service is 'nohup'.
+	The 'nohup' command is used to run a command immune to hangups and with output to a non-tty.
+	It is often used to run long-running processes or services in the background.
+	The syntax for using 'nohup' is: nohup command &
+	The '&' symbol at the end of the command tells the shell to run the command in the background.
+	Example: nohup python my_script.py &
+
+24) How to copy a directory in Linux?
+     To copy a directory in Linux, you can use the 'cp' command with the '-r' flag.
+	Use the 'cp' command followed by the '-r' flag to copy a directory recursively.
+	Specify the source directory followed by the destination directory to copy.
+	Example: cp -r /path/to/source/directory /path/to/destination/directory
+
+25) What is Inode in linux
+	Inode is a data structure in Linux file systems that stores metadata about files, such as permissions, ownership, and location.
+	Inodes contain information like file size, timestamps, and pointers to data blocks.
+	Each file in a Linux system is associated with an inode.
+	Inodes are identified by a unique inode number.
+	When a file is created, an inode is also created to store its metadata.
+
+26 Explain file system in Linux?
+   File system in Linux organizes and manages data on storage devices.
+	File system controls how data is stored, accessed, and managed on storage devices.
+	Linux uses a hierarchical file system structure with directories and files.
+	Common file systems in Linux include ext4, XFS, and Btrfs.
+	File permissions in Linux determine who can read, write, or execute files.
+	Mounting and unmounting drives allows access to different file systems on Linux.
+
+ 27) What is /proc linux
+    The /proc filesystem in Linux is a virtual filesystem that provides detailed   information about the system's hardware, processes, and kernel.
+	It is a virtual filesystem located at /proc that allows access to kernel data structures.
+	It provides information about processes, hardware, and kernel configuration.
+	Files in /proc can be read to gather system information, such as CPU usage, memory usage, and network statistics.
+
+28) Traceroute in Linux?
+Traceroute is a command-line tool used to trace the route that packets take from your computer to a destination server.
+	traceroute command is used to track the path that packets take to reach a destination server
+	It shows the IP addresses of the routers that the packets pass through
+	It also displays the round-trip time for each hop
+	Example: traceroute google.com
+
+29) How to work DNS in Linux? What is the record of DNS?
+DNS in Linux is managed through configuration files and commands. DNS records contain information about domain names and IP addresses.
+	DNS in Linux is managed through the /etc/resolv.conf file which contains the IP addresses of DNS servers.
+	The 'nslookup' command can be used to query DNS records for a specific domain name.
+	DNS records include A records (IP address), MX records (mail server), CNAME records (alias), and more.
+	DNS caching can improve performance by storing frequently accessed records locally.
+	DNSSEC can be used to add security to DNS by digitally signing records.
+
+30) How to kill process running in the background?
+    Use the 'kill' command followed by the process ID to kill a process running in the background.
+	Use the 'ps' command to find the process ID of the background process
+	Use the 'kill' command followed by the process ID to terminate the process
+	You can also use 'pkill' command to kill a process by name
+
+
+
           
 
