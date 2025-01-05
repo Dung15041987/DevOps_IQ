@@ -24,6 +24,14 @@ For some purpose, init starts a method permitting you to log in, typically at th
   4. init/systemd: Manages services, starts critical processes, reaches target 
     runlevel.    
   5. User Login: Starts user session, graphical or command-line interface.
+                                        (OR)
+4)Boot process of Linux, crontab shell script?
+      The boot process of Linux involves several stages, including BIOS, bootloader,    kernel initialization, and system initialization.
+	The boot process starts with the BIOS (Basic Input/Output System) initializing hardware and performing a Power-On Self-Test (POST).
+	The bootloader, such as GRUB or LILO, is then loaded to locate and load the Linux kernel.
+	The kernel initializes essential components, sets up memory, and mounts the root file system.
+	The init process is started, which executes startup scripts and launches system services
+
 
           
 
